@@ -13,10 +13,10 @@ message = 'This is my message'
 
 
 send_to_emails = list()
-send_to_emails = [file.rstrip('\n') for file in open('/home/oofa/Desktop/e-mail_sender/book1.csv')]
+send_to_emails = [file.rstrip('\n') for file in open('The emails CSV file path')]
 
 files_locations = list()
-files_locations = [file.rstrip('\n') for file in open('/home/oofa/Desktop/e-mail_sender/book2.csv')]
+files_locations = [file.rstrip('\n') for file in open('The attachments paths CSV file path')]
 
 # Connect and login to the email server
 server = smtplib.SMTP('smtp.gmail.com', 587)
